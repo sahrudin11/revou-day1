@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU SE Week 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="desktop-wrapper">
+        <div class="container">
+            <h1 class="title">RevoU</h1>
+            <!-- <p>Form Belajar</p> -->
+            <hr>
+            <br>
+            <div class="content">
+                <form action="" method="get" style="width: 50%">
+                    <table class="borderless">
+                        <tr>
+                            <td>Nama</td><td><input type="text" name="name" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td><td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="gender" value="L" checked>Laki-laki
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="P">Perempuan
+                                </label>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>Pesan</td>
+                            <td>
+                                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn" type="submit" id="submit">Kirim</button></td>
+                        </tr>
+                    </table>
+                </form>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama</th>
+                            <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Pesan</th>
+                            <th>Profil</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="form.js"></script>
+</body>
+</html>
